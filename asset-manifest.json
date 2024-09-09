@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ellac154/static/css/main.bf8b4f98.css",
-    "main.js": "/ellac154/static/js/main.f0022986.js",
+    "main.css": "/ellac154/static/css/main.bd4a1ee1.css",
+    "main.js": "/ellac154/static/js/main.d62c966e.js",
     "static/media/wood-wall.png": "/ellac154/static/media/wood-wall.c66030bef98f12fa6d78.png",
     "static/media/image.png": "/ellac154/static/media/image.a3fad483cbf97f61671c.png",
     "static/media/flamingoes.webp": "/ellac154/static/media/flamingoes.ea6f0f53fea81bef6cda.webp",
@@ -11,11 +11,11 @@
     "static/media/star.gif": "/ellac154/static/media/star.542577e0a15266b8632e.gif",
     "static/media/tack.png": "/ellac154/static/media/tack.1f3f953ad3fac9fb9722.png",
     "index.html": "/ellac154/index.html",
-    "main.bf8b4f98.css.map": "/ellac154/static/css/main.bf8b4f98.css.map",
-    "main.f0022986.js.map": "/ellac154/static/js/main.f0022986.js.map"
+    "main.bd4a1ee1.css.map": "/ellac154/static/css/main.bd4a1ee1.css.map",
+    "main.d62c966e.js.map": "/ellac154/static/js/main.d62c966e.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf8b4f98.css",
-    "static/js/main.f0022986.js"
+    "static/css/main.bd4a1ee1.css",
+    "static/js/main.d62c966e.js"
   ]
 }
