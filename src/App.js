@@ -137,7 +137,7 @@ function App() {
                 className="flamingoes"
               />
             </Col>
-            <Col>
+            <Col className="divider">
               <Card.Text className="sub-title">Famous Quotes</Card.Text>
               <ul className="quote-list">
                 <li className="quote">"Go to section!"</li>

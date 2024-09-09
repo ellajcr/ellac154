@@ -140,14 +140,6 @@ body {
   margin-left: 0.8em;
 }
 
-.advice {
-  border-style: solid;
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
-  border-width: 1px;
-}
-
 .custom-card {
   width: 50vw;
   height: 100%;
@@ -184,10 +176,12 @@ body {
   justify-content: center;
 }
 
-.advice {
+.divider {
+  border-style: solid;
   border-top: none;
   border-bottom: none;
-  border-left: none;
+  border-right: none;
+  border-width: 1px;
 }
 
 .advice-sub,
