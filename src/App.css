@@ -181,7 +181,7 @@ body {
   border-top: none;
   border-bottom: none;
   border-left: none;
-  border-width: 1px;
+  border-width: .5px;
 }
 
 .advice-sub,
