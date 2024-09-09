@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Pentagon';
+  src: url('./Pentagon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Rye-Regular';
+  src: url('./Rye-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grow-spin {
+  animation: elastic-spin 2s 1 ease;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes elastic-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(720deg) scale(1);
   }
+}
+
+@keyframes moveit {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: calc(100% - 8em);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 120px;
+  }
+}
+
+@keyframes hithere {
+  30% {
+    transform: scale(1.2);
+    font-family: 'Rye-Regular', serif;
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wiggle-animation {
+  animation: hithere 2s ease-in-out 1;
+}
+
+.cat-container {
+  position: fixed;
+  bottom: 6%;
+  width: 100vw;
+  height: 25%;
+  z-index: 2;
+}
+
+.cat-box {
+  position: absolute;
+  height: 8em;
+  width: 8em;
+  animation-name: moveit;
+  animation-duration: 8s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cat {
+  position: absolute;
+  height: 8em;
+  width: 8em;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.8, 0.5);
+  animation-iteration-count: infinite;
+}
+
+body {
+  background-image: url('./wood-wall.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quote-list {
+  align-items: center;
+}
+
+.quote-list li {
+  margin-bottom: 0.5em;
+}
+
+.tack {
+  width: 1.5em;
+  margin-right: 0.1em;
+}
+
+.flamingoes {
+  height: 10em;
+  align-self: center;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.5em;
+  margin-right: 0.8em;
+  margin-left: 0.8em;
+}
+
+.custom-card {
+  width: 50vw;
+  height: 100%;
+  background-image: url('./paper.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+.outline {
+  width: 50vw;
+  height: 100vw;
+}
+
+.title,
+.sub-title {
+  font-family: 'Pentagon', sans-serif;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 0 15px;
+  font-size: 60px;
+}
+
+.sub-title {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.advice {
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-width: 1px;
+}
+
+.advice-sub,
+.quote-list {
+  margin-top: -1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.rso-list {
+  font-weight: bold;
+  margin-top: -0.7em;
+  z-index: 3;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.star {
+  width: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.rso-list,
+.intro,
+.advice,
+.quote-list {
+  font-family: 'Vollkorn', system-ui;
+  font-size: 1em;
+}
+
+.intro::first-letter {
+  initial-letter: 2;
+  margin-right: 0.3em;
 }
